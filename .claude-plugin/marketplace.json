@@ -1,0 +1,68 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "custom-claude-marketplace",
+  "description": "Community marketplace manifest that references five user-requested plugins. Note: three upstream repos currently lack plugin manifests and will need one added before they can be installed.",
+  "owner": {
+    "name": "bhargav00007-del",
+    "email": ""
+  },
+  "plugins": [
+    {
+      "name": "claude-plugins-official",
+      "description": "Anthropic official marketplace (reference)",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": ".claude-plugin",
+        "ref": "ea10b213686c90bb1984b2016937310e05336cf3",
+        "sha": "ea10b213686c90bb1984b2016937310e05336cf3"
+      },
+      "homepage": "https://github.com/anthropics/claude-plugins-official"
+    },
+    {
+      "name": "claude-mem",
+      "description": "Memory compression system for Claude Code (thedotmack/claude-mem)",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/thedotmack/claude-mem.git",
+        "path": "plugin",
+        "ref": "3fae1eb45ba1a7fbd4818527f48b439991a273da",
+        "sha": "3fae1eb45ba1a7fbd4818527f48b439991a273da"
+      },
+      "homepage": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+      "name": "awesome-freellm-apis",
+      "description": "open-free-llm-api/awesome-freellm-apis — NOTE: upstream repo currently has NO .claude-plugin manifest. Add .claude-plugin/plugin.json (or plugin/.claude-plugin/plugin.json) to enable installs.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/open-free-llm-api/awesome-freellm-apis.git",
+        "path": ".claude-plugin",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/open-free-llm-api/awesome-freellm-apis"
+    },
+    {
+      "name": "Agent-Reach",
+      "description": "Panniantong/Agent-Reach — NOTE: upstream repo currently has NO .claude-plugin manifest. Add .claude-plugin/plugin.json (or plugin/.claude-plugin/plugin.json) to enable installs.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Panniantong/Agent-Reach.git",
+        "path": ".claude-plugin",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/Panniantong/Agent-Reach"
+    },
+    {
+      "name": "strix",
+      "description": "usestrix/strix — NOTE: upstream repo currently has NO .claude-plugin manifest. Add .claude-plugin/plugin.json (or plugin/.claude-plugin/plugin.json) to enable installs.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/usestrix/strix.git",
+        "path": ".claude-plugin",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/usestrix/strix"
+    }
+  ]
+}
